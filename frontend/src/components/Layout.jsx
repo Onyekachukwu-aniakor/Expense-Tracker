@@ -1,4 +1,4 @@
-import React, { Activity, useEffect, useMemo, useState } from "react";
+import  { Activity, useEffect, useMemo, useState } from "react";
 import { styles } from "../assets/dummyStyles";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
@@ -25,7 +25,7 @@ import {
 import axios from "axios";
 import { Outlet } from "react-router-dom";
 
-const API_BASE = "http://localhost:4000/api";
+const API_BASE = "https://expense-tracker-server-theta-lyart.vercel.app/api";
 const CATEGORY_ICONS = {
   Food: <Utensils className="w-4 h-4" />,
   Housing: <Home className="w-4 h-4" />,

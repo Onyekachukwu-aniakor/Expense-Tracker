@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import  { useEffect, useMemo, useState } from "react";
 import {
   dashboardStyles,
   trendStyles,
@@ -44,7 +44,7 @@ import {
 } from "recharts";
 import AddTransactionModal from "../components/Add";
 
-const API_BASE = "http://localhost:4000/api";
+const API_BASE = "https://expense-tracker-server-theta-lyart.vercel.app/api";
 
 const getAuthHeader = () => {
   const token =

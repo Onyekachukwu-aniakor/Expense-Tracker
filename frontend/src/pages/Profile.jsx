@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useEffect, useState } from "react";
+import  { memo, useCallback, useEffect, useState } from "react";
 import { profileStyles } from "../assets/dummyStyles";
 import Modal from "react-modal";
 import { Eye, EyeOff, Lock, User, X } from "lucide-react";
@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 
-const BASE_URL = "http://localhost:4000/api";
+const BASE_URL = "https://expense-tracker-server-theta-lyart.vercel.app/api";
 
 Modal.setAppElement("#root");
 // Move PasswordInput component outside of ProfilePage to prevent recreation on every render

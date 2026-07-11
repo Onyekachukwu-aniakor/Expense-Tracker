@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect, useRef, useState } from "react";
 import { navbarStyles } from "../assets/dummyStyles";
 import img1 from "../assets/logo.png";
 import { ChevronDown, LogOut, User } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:4000/api";
+const BASE_URL = "https://expense-tracker-server-theta-lyart.vercel.app/api";
 
 const Navbar = ({ user: propUser, onLogout }) => {
   const navigate = useNavigate();

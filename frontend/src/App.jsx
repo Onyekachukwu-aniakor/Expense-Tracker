@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import {
   Navigate,
   Route,
@@ -15,7 +15,7 @@ import Income from "./pages/Income";
 import Expense from "./pages/Expense";
 import Profile from "./pages/Profile";
 
-const API_URL = "http://localhost:4000";
+const API_URL = "https://expense-tracker-server-theta-lyart.vercel.app";
 
 // to get transaction from localstorage
 const getTransactionsFromStorage = () => {
