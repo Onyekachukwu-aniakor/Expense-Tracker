@@ -197,10 +197,12 @@ const Sidebar = ({ user, isCollapsed, setIsCollapsed }) => {
                 sidebarStyles.footerLink.base,
                 isCollapsed && sidebarStyles.footerLink.collapsed,
               )}
-              to="https://www.hexagondigitalservices.com/contact"
+              to="https://myportfolio-two-iota-99.vercel.app/"
             >
-              <HelpCircle size={20} className=" text-gray-500" />
+              
               {!isCollapsed && <span>Support</span>}
+              <HelpCircle size={20} className=" text-gray-500" />
+              <span className="tracking-tighter font-medium">Get In Touch</span>
             </Link>
 
             <button
@@ -304,11 +306,13 @@ const Sidebar = ({ user, isCollapsed, setIsCollapsed }) => {
                 <div className={sidebarStyles.mobileFooter}>
                   <Link
                     onClick={() => setMobileOpen(false)}
-                    to="https://www.hexagondigitalservices.com/contact"
+                    to="https://myportfolio-two-iota-99.vercel.app/"
                     className={sidebarStyles.mobileFooterLink}
                   >
-                    <HelpCircle size={20} className=" text-gray-500" />
+                    
                     <span>Support</span>
+                    <HelpCircle size={20} className=" text-gray-500" />
+                    <span className="tracking-tighter font-medium">Get In Touch</span>
                   </Link>
                   <button
                     onClick={handleLogout}
